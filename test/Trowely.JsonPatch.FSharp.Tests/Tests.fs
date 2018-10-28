@@ -1,5 +1,10 @@
-namespace Trowely.JsonPatch.FSharp.Tests
+module Tests
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+open Expecto
+
+[<Tests>]
+let tests = testList "Trowely Tests" [  
+  testCase "A simple test" <| fun () ->
+    let expected = 4
+    Expect.equal expected (2+2) "2+2 = 4"
+] 
