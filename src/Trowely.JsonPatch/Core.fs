@@ -1,5 +1,10 @@
 namespace Trowely.JsonPatch
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+module Core =
+
+    type JsonPatchAction = Add 
+                            | Remove 
+                            | Replace 
+                            | Copy 
+                            | Move 
+                            | Test
